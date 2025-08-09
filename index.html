@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Personal Homepage</title>
+  <!-- Add this inside the <head> tag -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- We'll create this CSS later -->
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <!-- Header Section with Navigation -->
+  <header>
+    <h1>Raneen Z</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p id="para">Project previews and links will go here.</p>
+    <div class="container slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <img src="1.jpg" alt="Project 1" />
+      <div class="overlay">
+        <h3>Project One</h3>
+        <p>A modern responsive website built using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="2.jpeg" alt="Project 2" />
+      <div class="overlay">
+        <h3>Project Two</h3>
+        <p>An e-commerce platform developed with React and Firebase.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="3.jpeg" alt="Project 3" />
+      <div class="overlay">
+        <h3>Project Three</h3>
+        <p>A mobile app UI design crafted with Figma and Flutter.</p>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="4.jpeg" alt="Project 4" />
+      <div class="overlay">
+        <h4>Project Four</h4>
+        <p>A poster designed by using Adobe Firefly.</p>
+      </div>
+    </div>
+
+    <!-- Dot navigation -->
+    <div class="dot-nav">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+  </div>
+    </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="container about-content">
+      <!-- Profile Picture -->
+      <img src="my pic.jpeg" alt="Photo of Raneen Z" class="profile-photo">
+
+      <!-- Introduction and Resume Link -->
+      <div class="about-text">
+        <p>Hi! I’m Raneen Z — a passionate web developer who enjoys creating clean, user-friendly websites. I love to
+          build things that live on the internet and solve real-world problems.</p>
+
+        <p>Want to know more? <a href="resume.pdf" target="_blank">View my resume</a>.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+   
+  <section id="skills">
+    <div class="container">
+    <h2>Skills</h2>
+
+    <div class="skill">
+      <h3>HTML</h3>
+      <p>Building the structure of web pages using semantic and accessible HTML5.</p>
+      <progress value="90" max="100"></progress>
+    </div>
+
+    <div class="skill">
+      <h3>CSS</h3>
+      <p>Styling responsive layouts with modern CSS features like Flexbox and Grid.</p>
+      <progress value="80" max="100"></progress>
+    </div>
+
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <p>Adding interactivity to websites using vanilla JS and modern ES6+ features.</p>
+      <progress value="75" max="100"></progress>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Raneen Z. All rights reserved.</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

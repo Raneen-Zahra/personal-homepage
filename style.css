@@ -1,0 +1,251 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000; /* or any dark shade */
+  line-height: 1.7;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 750px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 0rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #6e019dc8;
+   object-fit: cover;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 9%;
+color: aliceblue;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+slider p{
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#projects{
+  text-align: center;
+}
+
+#para{
+  margin-bottom: 18px;
+  text-align: center;
+}
+.about-text{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+/* Section spacing */
+section {
+  padding: 3rem 0rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#about{
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ededed;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6e019dc8;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+progress {
+  width: 100%;
+  height: 1rem;
+  appearance: inherit;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #dcb0de5d;
+}
+
+progress::-webkit-progress-value {
+  background-color: #6e019dc8;
+}
+
+progress::-moz-progress-bar {
+  background-color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #6e019dc8;
+  font-size: 0.9rem;
+  background-color: #6e019dc8;
+  color: #ffffff;
+
+}
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;;
+}
+
+.social-links a:hover {
+  color: #555;
+}
+  /* Responsive design */
+@media (min-width: 700px) {
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+}
+ html{
+  scroll-behavior: smooth;
+ }
+ 
+
+ .slideshow-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Individual slide styles */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* this line controls how the image fits */
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+/* Image scaling */
+.slide img {
+  width: 100%;
+    height: 60%;
+  display: block;
+  object-fit: cover;
+    border-radius: 3%;
+}
+
+/* Overlay text on image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent */
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+}
+
+.overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 16px;
+}
+
+/* Dot navigation styles */
+.dot-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #f6b6b6;
+}
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}

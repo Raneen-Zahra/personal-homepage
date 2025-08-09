@@ -1,0 +1,91 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the whole slideshow */
+.slideshow-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Individual slide styles */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* this line controls how the image fits */
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 0;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+/* Image scaling */
+.slide img {
+  width: 100%;
+    height: 60%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Overlay text on image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent */
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+}
+
+.overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 16px;
+}
+
+/* Dot navigation styles */
+.dot-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #f6b6b6;
+}
